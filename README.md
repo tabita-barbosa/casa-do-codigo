@@ -1,7 +1,8 @@
 # Casa do código - simulação
 
 Projeto desenvolvido para o bootcamp Itaú-ZUP. Utilizando Java, Spring e MySQL.
-
+Criar um CRUD e um processo de pagamento inicial. 
+Descrição do desafio: https://github.com/zup-academy/nosso-cartao-documentacao/tree/master/treino-casa-do-codigo
 
 Para testar os endpoints utilizar o formatação a seguir, em json, para cada um:
 _____________________________________________________________________________________________
@@ -23,7 +24,7 @@ ________________________________________________________________________________
 }
 _____________________________________________________________________________________________
 
-/livro
+/livros
 
 {
 	"titulo" : "nome do livro"
@@ -37,25 +38,35 @@ ________________________________________________________________________________
 }
 _____________________________________________________________________________________________
 
-/pais
+/paises
 
 {
 	"nome" : "nome do país"
 }
 _____________________________________________________________________________________________
 
-/estado
+/estados
 
 {
 	"nome" : "nome do estado",
-	"pais" : [
-		{ "nome" : "pais ao qual o estado pertence" }
-	]
+	"pais" : [{ "nome" : "pais ao qual o estado pertence" }]
 }
 _____________________________________________________________________________________________
 
-/pagamento
+/pagamentos
 
-{
-
+{	
+	"email":"seuemail@gmail.com", 
+	“nome”: “nome teste”, 
+	“sobrenome”:”sobrenome”,
+	“tipo”:”PF”,
+	“documento”:”50909809809”,
+	“endereco":"rua fluortia”,
+	“complemento”:”nao tem”,
+	“cidade”:”Gru”,
+	“pais”:{ïd”:1},
+	“estado”:{“id”:1},
+	“telefone”:”978988877”,
+	“cep”:”08765-987”
 }
+	
